@@ -90,10 +90,12 @@
     .entry { grid-template-columns: 1fr; gap: 4px; }
   }
 
-  .project-card {
-    border: 1px solid var(--line); border-radius: 2px; padding: 22px 24px;
+.project-card {
+    border: 1px solid var(--line); border-left: 4px solid var(--copper); border-radius: 2px; padding: 22px 24px;
     margin-bottom: 20px; background: var(--paper-dim);
-  }
+}
+.project-card:nth-of-type(2) { border-left-color: var(--teal); }
+  
   .project-card:last-child { margin-bottom: 0; }
   .project-card h3 { font-size: 1.1rem; font-weight: 600; }
   .project-card .meta { font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; color: var(--muted); margin-top: 3px; }
